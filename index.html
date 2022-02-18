@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-   <nav id="navbar">
-<a href="#welcome-section">Contact</a>
-<a href="#projects">Work</a>
-<a href="#profile-link">About</a>
-</nav>
-<main>
+   <div class="hero">
+     <nav>
+       <img src="https://photos.google.com/photo/AF1QipPUYyjLP-rMn8kwUnXyqPDbUyB-zElKzTjGOxFJ" class="log">
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Portfolio</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Service</a></li>
+       </ul>
+     </nav>
+     <div class="detal">
+       <h1>I'm Kgothatso Tony<span>Tshilambwana</span></h1>
+     </div>
+     <div class="images">
+        <img src="data:image/png;base64,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" class="rendom">
+        <img src="" class="mypic">
+     </div>
 
-    <section id="welcome-section">
-      <h1>Hey I am Kgothatso,</h1>
-      <p>a junior developer.</p>
-      <p>Currently updating my knowledge on the great FreeCodeCamp website</p>
-
-      <section id="copyright">
-        <h1>&copy; 2022 Kgothatso Tony</h1>
-      </section>
-    
 </body>
 </html>
