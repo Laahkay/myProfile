@@ -15,8 +15,8 @@ html, body {
     }
     
     .form {
-      height: 100%;
-      width: 400px;
+      height: 70%;
+      width: 36%;
       background-color: #fff;
       margin: -110px auto;
       border-radius: 10px;
@@ -61,6 +61,7 @@ html, body {
     .button button {
       display: inline-block;
       width: 400px;
+      float:left;
     }
     button {
       color: #666;
@@ -75,22 +76,22 @@ html, body {
       float:left;
     }
     
-    button.accept {
-      border-radius: 0px 0px 0px 10px;
-      border-right: solid 1px #cc919a;
+    .button button {
+      display: inline-block;
+      width: 400px;
     }
-    
-    button.regret {
-      border-radius: 0px 0px 10px 0px;
-    }
-    
-    button:hover {
-      background-color: #cc919a;
-      transition: .5s;
-    }
-    
-    button:focus {
-      outline: 0;
+    button {
+      color: #666;
+      background-color: #ffbdc7;
+      border: none;
+      font-family: 'Raleway';
+      font-size: 18px;
+      font-weight: 600;
+      padding: 15px 32px;
+      width: 200px;
+      margin: 20px auto 0px auto; 
+      float:left;
+      
     }
 
 
