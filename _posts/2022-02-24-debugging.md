@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "debugging"
-Date: "2022-02-24is"
+Date: "2022-02-24"
 ---
 
 # introduction
