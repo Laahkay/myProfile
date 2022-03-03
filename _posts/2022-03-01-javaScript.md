@@ -1,6 +1,6 @@
 ---
 Layout:
-Title: "Functional Programming"
+Title: "Functional Programming in JS"
 Date: "2022-03-01"
 ---
 
