@@ -1,0 +1,31 @@
+---
+Layout:
+Title: "jQuery"
+Date: "2022-03-18"
+---
+
+# INTRODUCTION
+
+What i have learned about today is only this topics Change the CSS of an Element Using jQuery,
+Disable an Element Using jQuery,
+Change Text Inside an Element Using jQuery 
+
+# BODY
+
+I started by knowing how to change CSS in JQuery because jQuery has a function called .css() that allows you to change the CSS of an element  and this how we do it check the example 
+we start by using the doller sing($)("#target1").css("color", "blue");
+so this is slightly different from a normal CSS declaration this is because the CSS property and its value are in quotes, and separated with a comma instead of a colon so we have to delete our  jQuery selectors, leaving an empty document ready function so that we can target our button and change its color to red or blue,
+
+ And now i have learned about how to Disable an element using JQuery So When you disable a button, it will become grayed-out and can no longer be clicked but then when we are doing that we have to call the jQuery has a function called .prop() that allows you to adjust the properties of elements but here is an example bellow 
+
+ start by the dollar sign($)("button").prop("disabled", true);
+
+ so that will make our button to be disabled and no longer work thats what we have to do on the task that i have passed,
+
+How to change text inside an element using JQuery we change the text between the start and end tags of an element JQuery ususe the function called .html() that lets you add HTML tags and text within an element and this is how we rewrite and emphasize the text of our heading using this method 
+start by using the doller sing($)("h3").html("<em>jQuery Playground</em>");
+thats where they introduce the difference between <i> and <em> and their uses 
+
+# CONCLUSION
+
+That was all for today i have learned new things about JQuery that i didnt even know but it was totally wirth it to learn them i mean the <i> and <em> and their uses and the was likely diffent than the once i did before but am glad that i was able to understand them and be able to understand to use them as well.

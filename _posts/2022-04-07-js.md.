@@ -1,0 +1,22 @@
+---
+Layout:
+Title: "jQuery "
+Date: "2022-03-21"
+---
+
+# INTRODUCTION
+What i have learned today is all about this following topics Remove an Element Using jQuery
+Use appendTo to Move Elements with jQuery
+Clone an Element Using jQuery
+Target the Parent of an Element Using jQuery,
+# BODY
+
+I have learned about how to remove an element  using JQuery is where by we use the function called .remove() that will remove an HTML element entirely,and i have also learned about Use appendTo to Move Elements with jQuery and is where we will use the function called appendTo() that allows you to select HTML elements and append them to another element and the is a method for that which i will include bellow as an example here is the example 
+($)("#target4").appendTo("#left-well");remove the brackects on the dollar sing
+and test it it will work,
+
+And i have learned about how to clone an element using JQuery here we use the function called clone() that will take a copy of an element first we have to target your button and before your button include a doller sign($) and after put a your function .clone|().appendTo will learn more as times goes by, And i have also learned about how to target the parent of an  element using JQuery as we all know that Every HTML element has a parent element from which it inherits properties  but here we they introduce the JQuery function called parent() that allows you to access the parent of whichever element you've selected for example of how you would use the parent() function if you wanted to give the parent element of the left-well element a background color of blue using this method -->($)("#left-well").parent().css("background-color", "blue") note this remove the brackets on the doller sing($) above
+
+# CONCLUSION
+
+My task went in a success so i did not have any challengies for today so i can understand JQuery right and its pretty cool working wiht Jquery functions and knowing more about JQuery its what am looking forwad to right now so that was all for today. THANK YOU
