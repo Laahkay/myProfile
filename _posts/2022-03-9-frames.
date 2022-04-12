@@ -12,32 +12,3 @@ cahnges from one set of css many time using the keyframe from something
 and to something and keyframes are used for animation by given more
 control over the animation that you want to perferm and also
 keyFrames defines the starting and ending points of any smooth transitions/
-
----
-Layout:
-Title: "jQuery"
-Date: "2022-03-22"
----
-
-# INTRODUCTION
-
-What i ahve learned today is about the following topics Target the Children of an Element Using jQuery,
-Target a Specific Child of an Element Using jQuery,
-Target Even Elements Using jQuery and
-Use jQuery to Modify the Entire Page
-
-# BODY
-
-For today i have learned that we can Target the Children of an Element Using jQuery
-When HTML elements are placed one level below another they are called children of that element and and we will have to call a jQuery has a function called children() that allows you to access the children of whichever element you've selected and Here's an example of how you would use the children() function to give the children of your left-well element the color blue this is the method to do it
-($)("#left-well").children().css("color", "blue") note that remove the brackets on the doller sign so that the method can work, So after i have learn about how to target a specific child of an element using JQUery so hence in jQuery uses CSS Selectors to target elements. The target:nth-child(n) CSS selector allows you to select all the nth elements with the target class or element type example is provided bellow
-
-($)(".target:nth-child(3)").addClass("animated bounce");
-note remove the brackets on the dollaer sign and the code should start with the doller sign, After i have learned about how to target element You can also target elements based on their positions using :odd or :even selectors so the :odd selects the second element (position 1), fourth element (position 3), and so on example is provided bellow
-
-($)(".target:odd").addClass("animated shake");
-note remove the brackets on the dollaer sign and the code should start with the doller sign, And i went to the other task and learned how to Use jQuery to Modify the Entire Page this is where by i learned that jQuery can target the body element as well so this how we would make the entire body fade out: $("body").addClass("animated fadeOut"); and we are requested to Add the classes animated and hinge to your body element and pass the task and that was the last task about JQUery i have finish about it
-
-# CONCLUSION
-
-I was able to finish JQuery today and i didnt have any problem i JQuery so it was a sucess on my side so that was all for today thats what i have learned for today,
