@@ -172,3 +172,173 @@ setForm ({firstname:"",surname:"",email:""})
      </div>
   );
 }
+
+quote machine
+
+import React ,{useState, useEffect ,useRef} from'react'
+import Form from "./components/form"
+import Display from './components/display'
+
+import './App.css';
+
+
+
+
+
+
+
+
+function App() {
+  const [quote, setQuote] = useState('');
+  const textRef = useRef();
+let colors = ['#ffff00','#90ee90','#ffa500','#ff68ff','#a9a9e']
+
+
+const getQuote = () => {
+  fetch("https://type.fit/api/quotes")
+  .then((res) => res.json())
+  .then((data) => {
+    let randomNum = Math.floor(Math.random() * data.length);
+  setQuote(data[randomNum]);
+  });
+};
+useEffect(() => {
+  getQuote();
+}, []);
+useEffect(() => {
+textRef.current.style.color =
+ colors[Math.floor(Math.random() * colors.length)]
+}, [quote])
+
+
+  return (
+    <div className="App">
+      <div className='quote'>
+       <p ref={textRef}>{quote.text}</p>
+       <p>Author: {quote.author}</p>
+      <div className='btnContainer'>
+        <button onClick={getQuote} className='btn1'>Get Quote</button>
+        <a href={`http://twitter.com/intend/tweet?text=${quote.text}`}
+        target='_blank'
+        rel='no opener no referrer' 
+        className='btn2'>Tweet</a>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <a class="list-group-item" href="#"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp; My Quote Practice</a>
+        </div> 
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+CSS of Quote machine
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  width: 100%;
+  margin: auto;
+  height:100%;
+  background-color: rgb(247, 136, 0);
+
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  background: rgb(53, 51, 51);
+}
+.quote {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  min-height: 195px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 9px;
+  box-shadow: blue;
+  display: flex;
+  flex-direction: column;
+height: 100%;
+  
+}
+p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  word-wrap: 10px 0;
+  text-align: center;
+  color: #186ccf;
+  /* font-size: 1.1rem; */
+  font-family: var(--primary-font);
+	font-size: 16px;
+	font-weight: 600;
+}
+p:last-of-type {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn1 {
+/* background-color: ;
+position:relative;
+ left:100px; 
+ top:10px;
+ border: none;
+background: none;
+text-align: center;
+color: #186ccf;
+border-radius: 5px;
+font-size: 1.2rem; */
+position: relative;
+top: 9px;
+font-family: var(--primary-font);
+	font-size: 16px;
+	font-weight: 600;
+
+	padding: 10px 30px;
+	color: #fff;
+	cursor:pointer;
+	background-color: var(--blue);
+	border-color: var(--blue);
+	border-radius: 4px;
+	box-shadow: 0 2px 0 rgba(0,0,0,.045);
+	transition: all .3s ease;
+	border: 1px solid transparent;
+  border: none;
+  border-bottom: 2px solid rgb(32, 168, 223);
+}
+.btn2 {
+  /* background: rgba(222, 218, 226, 0.199); */
+  position:relative;
+   left:150px; 
+   top:10px;
+   font-family: var(--primary-font);
+   font-size: 16px;
+   font-weight: 600;
+ 
+   padding: 10px 30px;
+   color: #fff;
+   cursor:pointer;
+   background-color: var(--blue);
+   border-color: var(--blue);
+   border-radius: 4px;
+   box-shadow: 0 2px 0 rgba(0,0,0,.045);
+   transition: all .3s ease;
+   border: 1px solid transparent;
+   border: none;
+   border-bottom: 2px solid rgb(32, 168, 223)
+  }
+.btn1:hover {
+  background: rgba(255, 255, 255, 0.13);
+  color: rgb(255, 255, 255);
+}
+.btn2:hover {
+  background: rgba(255, 255, 255, 0.13);
+  color: rgb(255, 255, 255);
+}
