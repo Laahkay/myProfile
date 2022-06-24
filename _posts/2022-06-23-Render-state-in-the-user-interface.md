@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "Render State in the User Interface and alsp how to render statte in the user interface another"
-Date: "2022-06-21"
+Date: "2022-06-23"
 ---
 
 # Introduction
