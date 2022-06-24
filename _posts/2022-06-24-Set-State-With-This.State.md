@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "Set State with this.setState"
-Date: "2022-06-23"
+Date: "2022-06-24"
 ---
 
 # Introduction
