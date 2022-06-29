@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "Bind 'this' to a Class Method"
-Date: "2022-06-24"
+Date: "2022-06-27"
 ---
 
 # Introduction
