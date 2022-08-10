@@ -1,7 +1,7 @@
 ---
 Layout:
 Title : "JavaScript Session"
-Date : "2022-08-0"
+Date : "2022-08-05"
 ---
 
 # Introduction 
