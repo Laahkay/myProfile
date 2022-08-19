@@ -1,7 +1,7 @@
 ---
 Layout:
-Title: "Javascripts Kata "
-Date: "2022-08-12 "
+Title: "React Kata "
+Date: "2022-08-17 "
 ---
 
 # Introduction
