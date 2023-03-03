@@ -1,6 +1,6 @@
 ---
 Layout:
-Title: "week blog post"
+Title: "weekly blog post"
 Date: "2023-03-02"
 ---
 
